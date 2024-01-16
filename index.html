@@ -7,7 +7,7 @@
   <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-environment-component@1.3.4/dist/aframe-environment-component.min.js"></script>
   <title>A-Frame-Player</title>
-  <script type="module" crossorigin src="/assets/index-6jBoTTaI.js"></script>
+  <script type="module" crossorigin src="/assets/index-oNkTFuai.js"></script>
 </head>
 
 <body>
@@ -66,13 +66,12 @@
         </a-entity>
       </a-entity>
     </a-entity>
-    
-    <a-videosphere id="videosphere" rotation="0 -90 -2.4" src="#video" visible="false" class="raycastable" player-click>
+
+    <a-videosphere id="videosphere" rotation="0 -90 0" src="#video" visible="false" player-click>
     </a-videosphere>
-    <a-entity id="controlBar" position="0 0.5 -2.4" mixin="controlBg" visible="true">
+    <a-entity id="controlBar" position="0 0.5 -2.4" mixin="controlBg" visible="false">
       <a-entity id="playBtn" mixin="playButton font" text="value: pause" class="raycastable" play-on-click></a-entity>
     </a-entity>
-    <a-entity id="camera" camera look-controls position="0 1.8 0"></a-entity>
   </a-scene>
 </body>
 
